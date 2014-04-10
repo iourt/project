@@ -25,7 +25,7 @@ define([
 		// 集合也可以这样定义
 		var books = new Backbone.Collection(models, {
 			model: Book
-		})
+		});
 
 		console.log(books.models[0].get("name"));
 		// 等价于

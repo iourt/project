@@ -35,7 +35,7 @@ define([
 		    name : 'RESTful Web Services Cookbook中文版',  
 		    price : 44.30  
 		  
-		}]  
+		}];  
 		  
 		// 创建集合对象  
 		var books = new Backbone.Collection(data, {  
