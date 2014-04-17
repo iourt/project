@@ -12,6 +12,8 @@ define([
 		mainModel.fetch({
 			url: "js/api/main_list.json",
 			success: function(res){
+				console.log(res.attributes);
+
 				var template = mainView.render(res.attributes).el;
 				$('#app_view').html(template);
 			},
