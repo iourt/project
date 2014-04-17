@@ -1,7 +1,5 @@
 <ul>
-	<li><a href=#main>Homepage</a></li>
-	<li><a href=#prompt>Prompt</a></li>
-	<li><a href=#json>JSON</a></li>
-	<li><a href=#todo>ToDO</a></li>
-	<li><a href=#collection>Collection</a></li>
+	{{#each data}}
+	<li href="#{{link}}">{{name}}</li>
+	{{/each}}
 </ul>

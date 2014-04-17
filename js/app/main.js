@@ -1,13 +1,25 @@
 define([
 	'jquery',
 	'backbone',
-	'view/main_view'
-], function($, Backbone, HomeView){
+	'view/main_view',
+	'model/main_model'
+], function($, Backbone, MainView, MainModel){
 
 	var HomeShow = function(){
-		var homeView = new HomeView();		
+		var mainView = new MainView(),
+			mainModel = new MainModel();
+
+		mainModel.fetch({
+			url: "js/api/main_list.json",
+			success: function(res){
+				var template = mainView.render(res.attributes).el;
+				$('#app_view').html(template);
+			},
+			error: function(){
+				console.log("error");
+			}
+		});
 		
-		$('#app_view').html(homeView.render().el);
 	};
 
 	return HomeShow;

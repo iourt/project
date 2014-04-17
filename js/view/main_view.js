@@ -2,17 +2,18 @@ define([
 	'jquery',
 	'backbone',
 	'layout/main.hbs'
-], function($, Backbone, homeTemp){
+], function($, Backbone, mainTemp){
 
-	var HomeView = Backbone.View.extend({
-		template: homeTemp,
-        initialize: function() {
+	var MainView = Backbone.View.extend({
+		template: mainTemp,
+        initialize: function(){
+
         },
-        render: function() {
-            this.setElement( this.template() );
+        render: function(renderData) {
+            this.setElement( this.template(renderData) );
             return this;
         }
 	});
 
-	return HomeView;
+	return MainView;
 });
