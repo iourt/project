@@ -14,6 +14,8 @@ define([
 			success: function(res){
 				console.log(res.attributes);
 
+				console.log(mainModel.get("id"));
+
 				var template = mainView.render(res.attributes).el;
 				$('#app_view').html(template);
 			},
