@@ -24,6 +24,26 @@ define([
 			}
 		});
 		
+
+		// Backbone.sync = function(method, model) {
+		// 	console.log(method + ": " + JSON.stringify(model));
+		// 	model.id = 1;
+		// };
+
+		var book = new Backbone.Model({
+			title: "The Rough Riders",
+			author: "Theodore Roosevelt"
+		});
+
+		book.sync = function(method, model){
+			console.log(method + ": " + JSON.stringify(model));
+		};
+
+
+		book.fetch();
+		book.save();
+
+		book.save({author: "Teddy"});
 	};
 
 	return HomeShow;
