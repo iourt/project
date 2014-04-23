@@ -2,12 +2,12 @@
 requirejs.config({
     baseUrl: 'js/',
     paths: {
-        'jquery':     '/lib/jquery',
-        'underscore': '/lib/underscore',
-        'backbone':   '/lib/backbone',
-        'handlebars': '/lib/handlebars',
-        'router':     'lib/router',
-        'require':    '/lib/require'
+        'jquery':     'lib/jquery',
+        'underscore': 'lib/underscore',
+        'backbone':   'lib/backbone',
+        'handlebars': 'lib/handlebars',
+        'router':     'app/router',
+        'require':    'lib/require'
     },
     shim: {
     	backbone: {

@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var Collection4 = function(){
 		// Collection定义了一系列用于快速从集合中查找我们想要的模型的方法，包括：
 		 

@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var Collection6 = function(){
 		// Collection也提供了两个与服务器进行交互的方法：
 		// fetch()：用于从服务器接口获取集合的初始化数据，覆盖或追加到集合列表中
@@ -29,7 +25,7 @@ define([
 		// 定义集合类  
 		var BookList = Backbone.Collection.extend({  
 		    model : Book,  
-		    url : '/index.json'  
+		    url : 'index.json'  
 		});  
 		  
 		// 创建集合对象, 并从服务器同步初始化数据  

@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var PromptView = function(){
 
 		var Sidebar = Backbone.Model.extend({

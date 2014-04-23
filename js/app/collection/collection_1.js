@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var Collection1 = function(){
 
 		// 集合提供了3个方法允许我们动态地向集合中动态插入模型：

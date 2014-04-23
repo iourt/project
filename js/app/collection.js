@@ -1,7 +1,4 @@
 define([
-	'jquery',
-	'underscore',
-	'backbone',
 	'app/collection/collection_1',
 	'app/collection/collection_2',
 	'app/collection/collection_3',
@@ -9,9 +6,6 @@ define([
 	'app/collection/collection_5',
 	'app/collection/collection_6'
 ], function(
-	$,
-	_,
-	Backbone,
 	Collection1,
 	Collection2,
 	Collection3,

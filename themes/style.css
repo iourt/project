@@ -25,6 +25,9 @@ ul li{
 	text-indent:10px;
 }
 
+li a{
+	display:block;
+}
 
 #sidebar{
 	width:100px;

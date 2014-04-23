@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'backbone'
-], function($, Backbone, homeTemp){
-
+define(function(){
 	var MainModel = Backbone.Model.extend({
 		default:{
 			"link": "",

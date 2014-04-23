@@ -1,10 +1,7 @@
 define([
-	'jquery',
-	'backbone',
 	'view/main_view',
 	'model/main_model'
-], function($, Backbone, MainView, MainModel){
-
+], function(MainView, MainModel){
 	var HomeShow = function(){
 		var mainView = new MainView(),
 			mainModel = new MainModel();

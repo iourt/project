@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var Collection2 = function(){
 		var Book = Backbone.Model.extend({
 			default: {

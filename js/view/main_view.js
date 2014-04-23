@@ -1,8 +1,6 @@
 define([
-	'jquery',
-	'backbone',
 	'layout/main.hbs'
-], function($, Backbone, mainTemp){
+], function(mainTemp){
 
 	var MainView = Backbone.View.extend({
 		template: mainTemp,

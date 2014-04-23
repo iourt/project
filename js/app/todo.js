@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var Todo = function(){
 		// var testModel = new Backbone.Model({
 		// 	name: "<script>alert('asd')</script>",

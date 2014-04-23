@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var Collection3 = function(){
 		// 集合类提供了3个方法用于从集合中移除模型对象，分别是：
 		 

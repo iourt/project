@@ -1,8 +1,4 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone'
-], function($, _, Backbone){
+define(function(){
 	var Collection5 = function(){
 		// 们常常使用数组的sort()方法对元素进行排序，Underscore也提供了sortBy()方法实现更为复杂的集合排序。
 		// 但在Backbone的集合对象中，为我们提供了集合元素的实时排序，当任何模型对象被插入到集合中时，都会按照预定的排序规则放到对应的位置。
